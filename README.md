@@ -17,7 +17,7 @@ mvn spring-boot:run
 
 ## Aplicação
 Para subir a aplicação (Angular) via terminal é necessário acessar o diretório "application", instalar as dependências do [node](https://nodejs.org/en/) e subir o servidor (Por padrão, será utilizada a porta 4200).
-Mais detalhes da aplicação via linha de comando [aqui](https://github.com/deniscpaula/super-pet/blob/master/Aplicacao/README.md).
+Mais detalhes da aplicação via linha de comando [aqui](https://github.com/deniscpaula/jt-user/blob/master/application/README.md).
 ```
 npm install
 ng server
