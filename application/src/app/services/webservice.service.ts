@@ -8,7 +8,7 @@ import 'rxjs/add/operator/map';
 export class Webservice {
     _http: Http;
     _headers: Headers;
-    _url = 'http://localhost:8080';
+    _url = 'http://localhost:8080/';
 
     constructor(http: Http) {
         this._http = http;
