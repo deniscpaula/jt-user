@@ -56,7 +56,7 @@ Retorna a lista de histórico:
 [GET] - /history
 ```
 
-#Print:
-![alt text](https://github.com/deniscpaula/jt-user/blob/master/prints/cadastro.png)
-![alt text](https://github.com/deniscpaula/jt-user/blob/master/prints/usuarios.png)
-![alt text](https://github.com/deniscpaula/jt-user/blob/master/prints/historico.png)
+# Print:
+![Cadastro de usuário](https://github.com/deniscpaula/jt-user/blob/master/prints/cadastro.png)
+![Lista de usuários](https://github.com/deniscpaula/jt-user/blob/master/prints/usuarios.png)
+![Hitórico de açes](https://github.com/deniscpaula/jt-user/blob/master/prints/historico.png)
