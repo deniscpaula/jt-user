@@ -55,3 +55,8 @@ Salva o novo usuário passado no body
 Retorna a lista de histórico:
 [GET] - /history
 ```
+
+#Print:
+![alt text](https://github.com/deniscpaula/jt-user/blob/master/prints/cadastro.png)
+![alt text](https://github.com/deniscpaula/jt-user/blob/master/prints/usuarios.png)
+![alt text](https://github.com/deniscpaula/jt-user/blob/master/prints/historico.png)
