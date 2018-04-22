@@ -1,1 +1,6 @@
-<p *ngFor="let h of history">{{ h.acao }} {{ h.data | date:'dd/MM/yyyy - hh:mm' }} </p>
+<h1>Histórico</h1>
+<div class="card">
+    <p class="card-row" *ngFor="let h of history">
+        {{ h.acao }} {{ h.data | date:'dd/MM/yyyy - hh:mm' }}
+    </p>
+</div>

@@ -1,0 +1,13 @@
+@import '../../../assets/css/color';
+
+.history-line {
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-grey-100;
+    }
+
+    &:last-child {
+        border: none;
+    }
+}

@@ -1,0 +1,26 @@
+@import '../../../assets/css/color';
+
+.card-row {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+
+    &:hover {
+        background-color: $color-grey-100;
+    }
+}
+
+.btn-action {
+    background-color: transparent;
+    border: none;
+    color: $color-grey-600;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-blue-300;
+    }
+
+    &.red:hover {
+        color: $color-red-300;
+    }
+}

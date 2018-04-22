@@ -25,8 +25,7 @@ export class UserService {
             .map(res => res.json());
     }
 
-    delete(user: User): Observable<User> {
-        return this.webservice.delete(`users/${user.id}`)
-            .map(res => res.json());
+    delete(user: User): Observable<any> {
+        return this.webservice.delete(`users/${user.id}`);
     }
 }

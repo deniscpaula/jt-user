@@ -1,8 +1,12 @@
-<ul>
-    <li><a routerLink="/cadastro">Cadastro</a></li>
-    <li><a routerLink="/usuarios">Usuários</a></li>
-    <li><a routerLink="/historico">Histórico</a></li>
-</ul>
+<div class="menu">
+    <ul>
+        <li><a routerLink="/cadastro" routerLinkActive="active">Cadastro</a></li>
+        <li><a routerLink="/usuarios" routerLinkActive="active">Usuários</a></li>
+        <li><a routerLink="/historico" routerLinkActive="active">Histórico</a></li>
+    </ul>
+</div>
 
-<router-outlet></router-outlet>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
 

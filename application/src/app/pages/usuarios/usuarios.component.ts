@@ -30,4 +30,18 @@ export class UsuariosComponent implements OnInit {
     this.router.navigate(['detalhe-usuario', { id: user.id }]);
   }
 
+  async delete(user: User) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    try {
+      if (confirm(`Deseja excluir o usuário ${user.nome}?`)) {
+        await this.userService.delete(user).toPromise();
+        this.getUsers();
+      }
+
+    } catch (error) {
+      alert('Não foi possível excluir o usuário');
+    }
+  }
 }

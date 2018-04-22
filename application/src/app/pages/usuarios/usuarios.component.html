@@ -1,1 +1,10 @@
-<p *ngFor="let u of users"><a (click)="showUser(u)">{{ u.id }} - {{ u.nome }} </a></p>
+<h1>Usuários</h1>
+<div class="card">
+    <div class="card-row" (click)="showUser(u)" *ngFor="let u of users">
+        <a>{{ u.id }} - {{ u.nome }}</a>
+        <div>
+            <button type="button" class="btn-action" (click)="showUser(u)">Ver detalhes</button>
+            <button type="button" class="btn-action red" (click)="delete(u)">Excluir</button>
+        </div>
+    </div>
+</div>
