@@ -1,7 +1,8 @@
 @import '../assets/css/color';
 
 .menu {
-    background-color: $color-white;
+    background-color: $color-red-300;
+    box-shadow: rgba(0, 0, 0, .35) 0 2px 7px;
     width: 100%;
 
     ul {
@@ -12,18 +13,20 @@
 
     li {
         a {
-            color: $color-blue-300;
+            color: $color-white;
             display: block;
-            padding: 20px;
+            padding: 25px 20px;
             text-decoration: none;
 
             &:hover {
-                background-color: $color-grey-100;
+                background-color: $color-red-400;
             }
 
             &.active {
-                background-color: $color-blue-300;
-                color: $color-white;
+                background-color: $color-red-500;
+                &:hover {
+                    background-color: $color-red-600;
+                }
             }
         }
     }

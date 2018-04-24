@@ -30,6 +30,10 @@ export class UsuariosComponent implements OnInit {
     this.router.navigate(['detalhe-usuario', { id: user.id }]);
   }
 
+  addUser() {
+    this.router.navigate(['cadastro']);
+  }
+
   async delete(user: User) {
     event.preventDefault();
     event.stopPropagation();

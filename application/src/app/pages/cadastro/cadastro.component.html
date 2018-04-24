@@ -2,17 +2,17 @@
 
 <form class="form card" (submit)="save()">
   <div class="form-row">
-    <label class="form-label" for="nome">Nome</label>
-    <input class="form-input" id="nome" name="nome" type="text" [(ngModel)]="user.nome">
+    <input class="form-input" #nome id="nome" name="nome" type="text" [(ngModel)]="user.nome">
+    <label class="form-label" [ngClass]="{ 'active': nome.value }" for="nome">Nome</label>
   </div>
   <div class="form-row">
-    <label class="form-label" for="email">Email</label>
-    <input class="form-input" id="email" name="email" type="text" [(ngModel)]="user.email">
+    <input class="form-input" #email id="email" name="email" type="text" [(ngModel)]="user.email">
+    <label class="form-label" [ngClass]="{ 'active': email.value }" for="email">Email</label>
   </div>
   <div class="form-row">
-    <label class="form-label" for="senha">Senha</label>
-    <input class="form-input" id="senha" name="senha" type="password" [(ngModel)]="user.senha">
+    <input class="form-input" #senha id="senha" name="senha" type="password" [(ngModel)]="user.senha">
+    <label class="form-label" [ngClass]="{ 'active': senha.value }" for="senha">Senha</label>
   </div>
 
-  <button class="btn btn-blue">Salvar</button>
+  <button class="btn btn-red">Salvar</button>
 </form>
