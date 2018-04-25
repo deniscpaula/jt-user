@@ -14,6 +14,11 @@ export class UserService {
         return this.webservice.post('users', JSON.stringify(user))
             .map(res => res.json());
     }
+
+    update(user: User): Observable<User> {
+        return this.webservice.patch('users', JSON.stringify(user))
+            .map(res => res.json());
+    }
     
     get(id: number | string): Observable<User> {
         return this.webservice.get(`users/${id}`)

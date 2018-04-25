@@ -6,10 +6,14 @@
     <label class="form-label" [ngClass]="{ 'active': nome.value }" for="nome">Nome</label>
   </div>
   <div class="form-row">
+    <input class="form-input" #telefone id="telefone" name="telefone" maxlength="15" type="text" [(ngModel)]="user.telefone">
+    <label class="form-label" [ngClass]="{ 'active': telefone.value }" for="telefone">Telefone</label>
+  </div>
+  <div class="form-row">
     <input class="form-input" #email id="email" name="email" type="text" [(ngModel)]="user.email">
     <label class="form-label" [ngClass]="{ 'active': email.value }" for="email">Email</label>
   </div>
-  <div class="form-row">
+  <div class="form-row" *ngIf="!user.id">
     <input class="form-input" #senha id="senha" name="senha" type="password" [(ngModel)]="user.senha">
     <label class="form-label" [ngClass]="{ 'active': senha.value }" for="senha">Senha</label>
   </div>

@@ -36,7 +36,7 @@ public class UserController {
 	@PatchMapping("")
 	public ResponseEntity<?> update(@RequestBody User user) {
 		try {
-			return new ResponseEntity<User>(this.userService.update(user), HttpStatus.CREATED);
+			return new ResponseEntity<User>(this.userService.update(user), HttpStatus.OK);
 		} catch (Exception e) {
 			return new ResponseEntity<String>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
 		}

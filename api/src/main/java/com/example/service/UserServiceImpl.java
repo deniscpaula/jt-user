@@ -34,6 +34,8 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public User update(User user) throws UserException {
 		try {
+			User actualUser = userRepository.findById(user.getId()).get();
+			user.setSenha(actualUser.getSenha());
 			user = userRepository.save(user);
 			History history = new History("Usuário " + user.getNome() + " atualizado em:");
 			this.historyService.save(history);

@@ -21,6 +21,9 @@ public class User {
 	@Column(name = "nome")
 	private String nome;
 	
+	@Column(name = "telefone")
+	private String telefone;
+
 	@Column(name = "email")
 	private String email;
 	
@@ -44,6 +47,13 @@ public class User {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
 	}
 	
 	@JsonIgnore

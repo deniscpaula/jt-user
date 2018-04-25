@@ -30,6 +30,10 @@ export class UsuariosComponent implements OnInit {
     this.router.navigate(['detalhe-usuario', { id: user.id }]);
   }
 
+  updateUser(user: User) {
+    this.router.navigate(['cadastro', { id: user.id }]);
+  }
+
   addUser() {
     this.router.navigate(['cadastro']);
   }

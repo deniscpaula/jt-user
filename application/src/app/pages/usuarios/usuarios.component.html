@@ -4,6 +4,7 @@
         <a>{{ u.id }} - {{ u.nome }}</a>
         <div>
             <button type="button" class="btn-action" (click)="showUser(u)">Ver detalhes</button>
+            <button type="button" class="btn-action" (click)="updateUser(u)">Editar</button>
             <button type="button" class="btn-action red" (click)="delete(u)">Excluir</button>
         </div>
     </div>

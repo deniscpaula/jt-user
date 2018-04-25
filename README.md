@@ -52,6 +52,9 @@ Exclui o usuário com id informado
 Salva o novo usuário passado no body
 [POST] - /users
 
+Atualiza o usuário passado no body
+[PATCH] - /users
+
 Retorna a lista de histórico:
 [GET] - /history
 ```
